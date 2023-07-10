@@ -1,0 +1,128 @@
+:root {
+  --background-color: #2a3b49;
+  --text-color: #7bffe9;
+  --header-height: 60px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+
+/* header css */
+
+header {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: var(--header-height);
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.4rem;
+}
+
+header > a {
+  color: var(--text-color);
+  font-size: 2rem;
+  text-decoration: none;
+}
+/*   
+  .img-container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20rem;
+  } */
+
+
+.dark-mode {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Css du main */
+
+/* tout le container du main (Titles, Img, Counter, Btn) */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: var(--header-height); */
+}
+
+/* les deux titres h1 et h2  */
+.title-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.title-all h1 {
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+.title-all h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+/* l'image centrale */
+img {
+  max-width: 80vw;
+  max-height: 120vh;
+
+  /* max-width: 1200px;
+  max-height: 690px; */
+}
+
+/* container flex de l'img */
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7vh;
+}
+
+/* le conteur en dessous */
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+/* le groupe de boutons */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* les deux boutons directements */
+button {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: solid 1px var(--text-color);
+  padding: 0.9rem;
+  border-radius: 35px;
+  width: 130px;
+  height: 10px;
+  line-height: 0.2rem;
+}

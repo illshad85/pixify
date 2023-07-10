@@ -1,0 +1,112 @@
+:root {
+  --background-color: #2a3b49;
+  --text-color: #7bffe9;
+  --header-height: 60px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+
+/* header css */
+
+header {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: var(--header-height);
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.4rem;
+}
+
+header > a {
+  color: var(--text-color);
+  font-size: 2rem;
+  text-decoration: none;
+}
+/*   
+    .img-container-flex {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 20rem;
+    } */
+
+.dark-mode {
+  color: var(--text-color);
+}
+
+/* .dark-mode-active {
+  background-color: var(--background-color);
+  color: white;
+} */
+
+/* css du main  */
+
+/* container du titre et sub */
+.title-container {
+  /* background-color: red; */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 4vh;
+  padding: 2rem 4rem;
+}
+
+/* container de tout */
+.main-flex-container {
+  display: flex;
+  margin-left: 6vw;
+  margin-right: 0.5vw;
+  margin-top: 20vh;
+}
+
+/* container du texte de main */
+.text-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 3vw;
+}
+
+/* container de l'img */
+
+.img-container {
+}
+
+/* image itself  */
+img {
+  max-width: 33vw;
+  max-height: 124vh;
+  border-radius: 23px;
+}
+
+button {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: solid 1px var(--text-color);
+  padding: 0.9rem;
+  border-radius: 95px;
+  width: 520px;
+  height: 160px;
+  font-size: 2.1rem;
+}
+
+/* container du btn */
+.container-btn {
+}
